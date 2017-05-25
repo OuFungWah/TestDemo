@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="260dp"
+    android:layout_height="match_parent"
+    android:background="@color/colorContextBackground"
+    android:elevation="5dip">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--上背景-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:background="@color/colorAndroidGreen" />
+
+        <!--下背景-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorContextBackground" />
+
+
+        <!--选项列-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3.5"
+            android:orientation="vertical">
+
+            <!--商店首页-->
+            <RelativeLayout
+                android:id="@+id/home_rl"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/option_cilck"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:src="@mipmap/home48" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="55dp"
+                    android:text="Store Home"
+                    android:textColor="@color/colorTextColor"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+            <!--商店首页结束-->
+
+            <!--我的应用-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/option_cilck"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:src="@mipmap/androidos48" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="55dp"
+                    android:text="My Apps"
+                    android:textColor="@color/colorTextColor"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+            <!--我的应用-->
+
+            <!--我的游戏-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/option_cilck"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:src="@mipmap/controller_48" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="55dp"
+                    android:text="My Games"
+                    android:textColor="@color/colorTextColor"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+            <!--我的游戏结束-->
+
+            <!--我的设置-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/option_cilck"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:src="@mipmap/settings48" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="55dp"
+                    android:text="Setting"
+                    android:textColor="@color/colorTextColor"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+            <!--我的设置-->
+
+        </LinearLayout>
+        <!--选项列结束-->
+
+        <!--退出键-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5">
+
+            <RelativeLayout
+                android:id="@+id/exit_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/exit_click"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/back48" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="52dp"
+                    android:text="Exit"
+                    android:textColor="@color/colorTextColor"
+                    android:textSize="22sp" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+        <!--退出键结束-->
+
+    </LinearLayout>
+
+    <!--头像与姓名-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3">
+
+            <ImageView
+                android:id="@+id/head_img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/chrome528" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/head_img"
+                android:layout_centerHorizontal="true"
+                android:text="Diego Bruce"
+                android:textColor="@color/colorAndroidGreen"
+                android:textSize="22sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3.5"></LinearLayout>
+
+
+    </LinearLayout>
+    <!--头像与姓名结束-->
+
+</RelativeLayout>

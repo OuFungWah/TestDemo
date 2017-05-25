@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPureWhite">#FFFFFF</color>
+    <color name="colorAndroidGreen">#689f39</color>
+    <color name="colorAndroidPressGreen">#79af4a</color>
+    <color name="colorMovieRed">#ed3b3b</color>
+    <color name="colorMoviePressRed">#fe4c4c</color>
+    <color name="colorBookBlue">#039be6</color>
+    <color name="colorBookPressBlue">#14acf7</color>
+    <color name="colorNewStandBlue">#536dfe</color>
+    <color name="colorNewStandPressBlue">#647eff</color>
+    <color name="colorTextColor">#343434</color>
+    <color name="colorPress">#ababab</color>
+    <color name="colorContextBackground">#efefef</color>
+</resources>

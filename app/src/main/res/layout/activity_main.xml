@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.oufenghua.testdemo.MainActivity">
+
+    <!--内容开始-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorContextBackground"
+            android:orientation="vertical">
+
+            <!--标题栏-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="#34495e"
+                android:elevation="5dip">
+
+                <ImageView
+                    android:id="@+id/menu_logo"
+                    android:layout_width="30dp"
+                    android:layout_height="38dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:src="@mipmap/menuwhite48" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="56dp"
+                    android:text="Play Store"
+                    android:textColor="@color/colorPureWhite"
+                    android:textSize="22sp" />
+
+                <ImageView
+                    android:id="@+id/main_search_img"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:src="@mipmap/searchwhite48" />
+
+            </RelativeLayout>
+            <!--标题栏结束-->
+
+            <!--主内容開始-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!--分类栏-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <!--第一栏-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/androidgreen_background"
+                            android:clickable="true"
+                            android:elevation="3dip"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:src="@mipmap/androidos52"
+                                android:id="@+id/imageView5" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="6dp"
+                                android:text="APPS"
+                                android:textColor="@color/colorPureWhite"
+                                android:textSize="16sp"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/imageView5"
+                                android:layout_toEndOf="@+id/imageView5"
+                                android:layout_marginStart="6dp"
+                                android:id="@+id/textView2" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/androidgreen_background"
+                            android:clickable="true"
+                            android:elevation="3dip">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:src="@mipmap/controller48" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="48dp"
+                                android:text="GAMES"
+                                android:textColor="@color/colorPureWhite"
+                                android:textSize="16sp" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                    <!--第一栏结束-->
+
+                    <!--第二栏-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/moviesred_background"
+                            android:clickable="true"
+                            android:elevation="3dip"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:src="@mipmap/movie48" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="48dp"
+                                android:text="MOVIES"
+                                android:textColor="@color/colorPureWhite"
+                                android:textSize="16sp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bookblue_background"
+                            android:clickable="true"
+                            android:elevation="3dip">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:src="@mipmap/literature48"
+                                android:id="@+id/imageView6" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="6dp"
+                                android:text="BOOKS"
+                                android:textColor="@color/colorPureWhite"
+                                android:textSize="16sp"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/imageView6"
+                                android:layout_toEndOf="@+id/imageView6"
+                                android:layout_marginStart="6dp"
+                                android:id="@+id/textView4" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                    <!--第二栏结束-->
+
+                    <!--第三栏-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/newstand_background"
+                            android:clickable="true"
+                            android:elevation="3dip"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:src="@mipmap/purchaseorder48" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="NEWSTANDS"
+                                android:textColor="@color/colorPureWhite"
+                                android:textSize="16sp"
+                                android:layout_centerVertical="true"
+                                android:layout_centerHorizontal="true"
+                                android:id="@+id/textView3" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1">
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                    <!--第三栏结束-->
+
+                </LinearLayout>
+                <!--分类栏结束-->
+
+                <!--活动-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2.5">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/pokemon_go_activity"
+                        android:id="@+id/imageView" />
+
+                </LinearLayout>
+                <!--活动结束-->
+
+                <!--推荐应用-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="4"
+                    android:orientation="vertical">
+
+                    <!--推广-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <!--标语-->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Essential Games"
+                                android:textColor="@color/colorTextColor"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Games Over a Million Downloads"
+                                android:id="@+id/textView" />
+
+                        </LinearLayout>
+                        <!--标语结束-->
+
+                        <Button
+                            android:layout_width="46dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/androidgreen_background"
+                            android:clickable="true"
+                            android:elevation="3dip"
+                            android:text="MORE"
+                            android:textColor="@color/colorPureWhite"
+                            android:textSize="11sp" />
+
+                    </RelativeLayout>
+                    <!--推广结束-->
+
+                    <!--热门应用-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:orientation="horizontal"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp">
+
+                        <!--第一個熱門應用-->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="2dp"
+                            android:layout_weight="1"
+                            android:background="@color/colorPureWhite"
+                            android:elevation="4dip"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="0dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_weight="2.5"
+                                android:src="@mipmap/google_earth528"
+                                android:id="@+id/imageView3" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:paddingTop="5dp"
+                                android:text="Google Earth"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+                        <!--第一個熱門應用結束-->
+
+                        <!--Google Play-->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="2dp"
+                            android:layout_weight="1"
+                            android:background="@color/colorPureWhite"
+                            android:elevation="4dip"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="0dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_weight="2.5"
+                                android:src="@mipmap/google_play528"
+                                android:id="@+id/imageView4" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:paddingTop="5dp"
+                                android:text="Google Play"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+                        <!--Google Play 結束-->
+
+                        <!--Chrome-->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="2dp"
+                            android:layout_weight="1"
+                            android:background="@color/colorPureWhite"
+                            android:elevation="4dip"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="0dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_weight="2.5"
+                                android:src="@mipmap/chrome528"
+                                android:id="@+id/imageView2" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:paddingTop="5dp"
+                                android:text="Chrome"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+                        <!--Chrome 結束-->
+
+                    </LinearLayout>
+                    <!--热门应用结束-->
+
+                </LinearLayout>
+                <!--推荐应用-->
+
+            </LinearLayout>
+            <!--主内容結束-->
+
+            <!--&lt;!&ndash;脚栏&ndash;&gt;-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"></LinearLayout>-->
+            <!--&lt;!&ndash;脚栏&ndash;&gt;-->
+
+        </LinearLayout>
+
+    </FrameLayout>
+    <!--内容结束-->
+
+    <!--侧拉栏-->
+    <LinearLayout
+        android:elevation="8dip"
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:orientation="vertical">
+
+        <include layout="@layout/drawer_nav_layout" />
+
+    </LinearLayout>
+    <!--侧拉栏结束-->
+
+</android.support.v4.widget.DrawerLayout>
